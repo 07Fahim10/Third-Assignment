@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Third-Assignment</title>
+  <link href="output/main.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+ <!-- start header section -->
+
+  <header class="md:mx-10 md:py-4 py-2 px-2">
+    <nav class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+        <a href="#"><img src="images/c4u full logo_2022 1.png" alt="logo" class="w-[120px] md:w-fit"></a>
+        </div>
+
+        <div>
+            <ul class="md:flex  md:items-center md:gap-7 text-[24px] md:text-lg z-[-1] md:z-aut md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 top-[-400px] transition-all ease-in duration-50 md:opacity-100 opacity-0">
+                <li><a href="#" class="hover:text-[#F44335]">Home</a></li>
+                <li><a href="#" class="hover:text-[#F44335]">About Us</a></li>
+                <li class="text-[#F44335]"><a href="#" class="hover:text-[#b3382f]">Upskill</a></li>
+                <li><a href="#" class="hover:text-[#F44335]">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="flex items-center gap-1 md:gap-5">
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+
+            <a href="#">
+                <button class="bg-[#F44335] md:text-base text-xs md:py-2.5 py-1 md:px-5 px-2 rounded-md text-white font-semibold hover:bg-[#DA4135] transition hover:scale-105 hover:translate-y-1">
+                    Register Interest
+                </button>
+            </a>
+
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 dark:stroke-white hover:scale-110 transition">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                  </svg>
+            </button>
+        </div>
+    </nav>
+  </header>
+  
+  <!-- end header section -->
+
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+</body>
+</html>
