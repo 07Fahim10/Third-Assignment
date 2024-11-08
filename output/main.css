@@ -6,3 +6,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* shortcut tag */
+.learn-tag{
+    @apply  border border-[#F44335] px-2 py-1 rounded-full hover:bg-black hover:text-white transition-all cursor-pointer;
+}
+
+.course-tag{
+    @apply  rounded-full border border-black dark:text-white dark:border-gray-400 xl:px-3 px-2 py-0.5 md:text-[14px] sm:text-[10px] md:py-1 text-[9px] hover:bg-black hover:text-white transition-all cursor-pointer;
+}
